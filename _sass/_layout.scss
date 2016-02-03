@@ -209,6 +209,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    text-align: left;
 }
 
 .page-heading {
@@ -217,8 +218,10 @@
 
 .post-list {
     list-style: none;
+    margin: 0;
     >li{
         border-bottom: 1px dashed #e8e8e8;
+        text-align: left;
     }
     .post-meta{
         float: left;
