@@ -29,6 +29,9 @@
     height: 300px;
     border-radius: 150px;
     opacity: 0.7;
+    @include media-query($on-palm) {
+        margin-top: 50px;
+    }
 }
 
 .site-nav {
@@ -67,7 +70,7 @@
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
-        background-color: $background-color;
+        background-color: #222;
         border: 1px solid $grey-color-light;
         border-radius: 5px;
         text-align: right;
