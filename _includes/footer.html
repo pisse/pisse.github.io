@@ -2,35 +2,32 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <!--<h2 class="footer-heading">{{ site.title }}</h2>-->
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+      <div class="footer-col">
+        <span>© 2015 Chandler Huang </span>
       </div>
 
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
+      <div class="footer-col social-media-list">
           {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
+            <a href="https://github.com/{{ include.username }}"><i class="fa fa-twitter-square fa-2x"></i></a>
           {% endif %}
 
           {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
+            <a href="https://twitter.com/{{ include.username }}"><i class="fa fa-github-square fa-2x"></i></a>
           {% endif %}
-        </ul>
+
+          {% if site.facebook_username %}
+            <a href="https://facebook.com/{{ include.username }}"><i class="fa fa-facebook-square fa-2x"></i></a>
+          {% endif %}
+
+            <a href="/feed.xml"><i class="fa fa-rss-square fa-2x"></i></a>
       </div>
 
-      <div class="footer-col footer-col-3">
+      <!--<div class="footer-col footer-col-3">
         <p>{{ site.description }}</p>
-      </div>
+      </div>-->
     </div>
 
   </div>

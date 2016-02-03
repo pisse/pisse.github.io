@@ -91,16 +91,16 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $black-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($black-color, 15%);
     }
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
@@ -204,3 +204,7 @@ pre {
         }
     }
 }
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "vendor/font-awesome/scss/font-awesome";
