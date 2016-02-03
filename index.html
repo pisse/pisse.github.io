@@ -6,23 +6,25 @@ layout: default
 
   <!--<h1 class="page-heading">Posts</h1>-->
 
-  <section class="post-list">
+  <ul class="post-list">
     {% for post in site.posts %}
-      <article>
-        <aside class="post-meta">
-          <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-          <a href="">1 comments</a>
-        </aside>
+      <li>
+        <article>
+          <aside class="post-meta">
+            <time>{{ post.date | date: "%b %-d, %Y" }}</time>
+            <a href="">1 comments</a>
+          </aside>
 
-        <section class="content-wrap">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <p class="content">
-            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-          </p>
-        </section>
-      </article>
+          <section class="content-wrap">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <p class="content">
+              {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            </p>
+          </section>
+        </article>
+      </li>
     {% endfor %}
-  </section>
+  </ul>
 
   <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 

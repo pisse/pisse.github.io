@@ -199,6 +199,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    min-height: 450px;
 }
 
 .page-heading {
@@ -206,6 +207,10 @@
 }
 
 .post-list {
+    list-style: none;
+    >li{
+        border-bottom: 1px dashed #e8e8e8;
+    }
     .post-meta{
         float: left;
         width: 150px;
@@ -282,4 +287,19 @@
             font-size: 18px;
         }
     }
+}
+
+#back_top{
+    background-color: #fff;
+    border: 2px solid #aaa;
+    border-radius: 7px;
+    bottom: 40px;
+    cursor: pointer;
+    display: none;
+    font-weight: bold;
+    opacity: .8;
+    padding: 3px 6px;
+    position: fixed;
+    right: 50px;
+    z-index: 99999;
 }
