@@ -2,7 +2,7 @@
 layout: post
 title:  "radial-gradient"
 date:   2016-02-14 15:20:43 +0800
-categories: css
+categories: css frontend
 ---
 CSS radial-gradient() 函数创建了一个呈径向渐变颜色的 `<image>`。
 

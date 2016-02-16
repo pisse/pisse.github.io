@@ -18,3 +18,10 @@ facebook_username: chandler
 
 # Build settings
 markdown: kramdown
+
+
+comments: true
+
+# Site owner
+owner:
+  disqus-shortname: monicaye

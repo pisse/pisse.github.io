@@ -2,7 +2,7 @@
 layout: post
 title:  "linear-gradient"
 date:   2016-02-02 21:20:43 +0800
-categories: css
+categories: css frontend
 ---
 CSS linear-gradient() 函数创建了一个呈线性渐变颜色的 `<image>`。
 
