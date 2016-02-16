@@ -10,7 +10,7 @@
     <article>
       <aside class="post-meta">
         <time>{{ post.date | date: "%b %-d, %Y" }}</time>
-        <a href="">1 comments</a>
+        <span href="">{{ post.categories | join: ','}}</span>
       </aside>
 
       <section class="content-wrap">
